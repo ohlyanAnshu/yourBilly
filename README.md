@@ -1,2 +1,2 @@
 # yourBilly
-An expense manager web application.
+An expense manager web application using Django.
