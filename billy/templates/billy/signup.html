@@ -1,0 +1,52 @@
+{% extends 'billy/base.html' %}
+
+{% block content%}
+
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="text-align: center;">
+        <h2 class="color1">Create an account</h2>
+        <p class="color2">or <a href="#"><strong>login </strong></a>if already registered</p>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-6">
+        <div class="card" style="width: 496px;">
+            <div class="card-body shadow-lg">
+                <form class="loginForm" method="POST">{% csrf_token %}
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control" placeholder="Enter your first name" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lasttName">Last Name:</label>
+                        <input type="text" class="form-control" placeholder="Enter your last name" id="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" placeholder="Enter your password" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpwd">Confirm Password:</label>
+                        <input type="password" class="form-control" placeholder="Enter your password again" id="confirmpwd">
+                    </div>
+                   
+                    <button type="submit" class="btn1 shadow-sm">Register</button><br>
+                </form>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+<div class="col-sm-2"></div>
+</div>
+
+
+{% endblock content %}

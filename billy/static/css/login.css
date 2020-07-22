@@ -1,0 +1,34 @@
+body{
+    background-color: teal;
+}
+
+
+.btn1{
+    width: 9em;
+    height: 3em;
+    margin: 1em 0 1em 9em;
+    background: teal;
+    border: none;
+    color: white;
+    
+}
+
+.color1{
+    color: white;
+}
+
+.color2{
+    color: rgb(238, 236, 236);
+}
+
+.color2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.loginForm a{
+    text-decoration: none;
+    margin-left: 9.7em;
+    color: black;
+}
+
